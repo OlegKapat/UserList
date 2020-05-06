@@ -4,7 +4,7 @@ import { MaterialService, MaterialDatepicker } from 'src/app/shared/classes/mate
 import { DetailsService } from 'src/app/shared/services/details.service';
 import { Statictic } from 'src/app/shared/interfaces/statictic';
 import * as moment from 'moment';
-import { fromEvent, Subscription, Subject } from 'rxjs';
+import { fromEvent, Subject } from 'rxjs';
 import {  takeUntil } from 'rxjs/operators';
 import { FormControl, FormGroup } from '@angular/forms';
 
@@ -33,9 +33,6 @@ export class DetailsComponent implements OnInit,AfterViewInit,AfterContentInit,O
    enddefault:number;
    startDate:string;
    endDate:string;
-   getDifference:any;
-   aSub1:Subscription;
-   aSub2:Subscription;
    datapage_viewsForChart:number[]=[];
    datepage_viewsForChart:string[]=[];
 
@@ -55,8 +52,8 @@ export class DetailsComponent implements OnInit,AfterViewInit,AfterContentInit,O
   ngAfterViewInit(){
     this.start= MaterialService.initDatepicker(this.from ,this.validate.bind(this));
     this.end= MaterialService.initDatepicker(this.to,this.validate.bind(this));
-    this.aSub1=fromEvent(this.from.nativeElement,'change').pipe(takeUntil(this.unSubscribe)).subscribe(data=>{this.startDate=data['target'].value});
-    this.aSub1=fromEvent(this.to.nativeElement,'change').pipe(takeUntil(this.unSubscribe)).subscribe(data=>{this.endDate=data['target'].value
+    fromEvent(this.from.nativeElement,'change').pipe(takeUntil(this.unSubscribe)).subscribe(data=>{this.startDate=data['target'].value});
+    fromEvent(this.to.nativeElement,'change').pipe(takeUntil(this.unSubscribe)).subscribe(data=>{this.endDate=data['target'].value
     });
    
     
