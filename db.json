@@ -1,0 +1,175 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "firstName": "Christie",
+      "lastName": "Gann",
+      "email": "cgann0@hostgator.com",
+      "gender": "Female",
+      "totalClicks": 13469,
+      "totalPageViews": 15299,
+      "ipAddress": "57.14.195.231"
+    },
+    {
+      "id": 2,
+      "firstName": "Hamil",
+      "lastName": "Cressey",
+      "email": "hcressey1@delicious.com",
+      "gender": "Male",
+      "totalClicks": 13849,
+      "totalPageViews": 11987,
+      "ipAddress": "45.225.25.145"
+    },
+    {
+      "id": 3,
+      "firstName": "Lottie",
+      "lastName": "Dupre",
+      "email": "ldupre2@dot.gov",
+      "gender": "Female",
+      "totalClicks": 6355,
+      "totalPageViews": 9482,
+      "ipAddress": "254.46.181.79"
+    },
+    {
+      "id": 4,
+      "firstName": "Godfry",
+      "lastName": "Raoult",
+      "email": "graoult3@npr.org",
+      "gender": "Male",
+      "totalClicks": 14286,
+      "totalPageViews": 14224,
+      "ipAddress": "133.124.79.194"
+    },
+    {
+      "id": 5,
+      "firstName": "Dorrie",
+      "lastName": "Beckley",
+      "email": "dbeckley4@buzzfeed.com",
+      "gender": "Female",
+      "totalClicks": 9032,
+      "totalPageViews": 9658,
+      "ipAddress": "252.217.2.208"
+    },
+    {
+      "id": 6,
+      "firstName": "Linc",
+      "lastName": "Milella",
+      "email": "lmilella5@wikispaces.com",
+      "gender": "Male",
+      "totalClicks": 8525,
+      "totalPageViews": 8825,
+      "ipAddress": "175.119.105.110"
+    },
+    {
+      "id": 7,
+      "firstName": "Alfie",
+      "lastName": "Sullivan",
+      "email": "aosullivan6@sphinn.com",
+      "gender": "Male",
+      "totalClicks": 9688,
+      "totalPageViews": 9903,
+      "ipAddress": "218.183.185.92"
+    },
+    {
+      "id": 8,
+      "firstName": "Urbanus",
+      "lastName": "Pittford",
+      "email": "upittford7@mit.edu",
+      "gender": "Male",
+      "totalClicks": 11888,
+      "totalPageViews": 11696,
+      "ipAddress": "199.232.254.9"
+    },
+    {
+      "id": 9,
+      "firstName": "Osbourne",
+      "lastName": "Andreacci",
+      "email": "oandreacci8@eventbrite.com",
+      "gender": "Male",
+      "totalClicks": 7710,
+      "totalPageViews": 6917,
+      "ipAddress": "172.255.67.174"
+    },
+    {
+      "id": 10,
+      "firstName": "Dina",
+      "lastName": "Sturt",
+      "email": "dsturt9@npr.org",
+      "gender": "Female",
+      "totalClicks": 9458,
+      "totalPageViews": 10125,
+      "ipAddress": "170.156.106.240"
+    },
+    {
+      "firstName": "Srav",
+      "lastName": "Biduh",
+      "email": "olegk@ukr-com.net",
+      "password": "1234",
+      "gender": "Female",
+      "ipAddress": "123.23.45.67",
+      "totalClicks": "42",
+      "totalPageViews": "35",
+      "id": 11
+    },
+    {
+    "totalPages": 100,
+    "totalElements": 1000
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "unsorted": true,
+      "sorted": false,
+      "empty": true
+    },
+    "pageNumber": 0,
+    "pageSize": 10,
+    "offset": 0,
+    "paged": true,
+    "unpaged": false
+  },
+  "settings": {
+    "last": false,
+    "totalPages": 100,
+    "first": true
+  },
+  "sort": {
+    "unsorted": true,
+    "sorted": false,
+    "empty": true
+  },
+  "additionalset": {
+    "number": 0,
+    "size": 10,
+    "empty": false
+  },
+  "statistics":[{"id":1,"page_views":260,"date":"2019-10-02T00:00:00.000+0000","clicks":565,"userId":33},
+                {"id":41,"page_views":362,"date":"2019-10-03T00:00:00.000+0000","clicks":147,"userId":33},
+                {"id":131,"page_views":398,"date":"2019-10-04T00:00:00.000+0000","clicks":370,"userId":33},
+                {"id":277,"page_views":701,"date":"2019-10-05T00:00:00.000+0000","clicks":141,"userId":33},
+                {"id":476,"page_views":458,"date":"2019-10-06T00:00:00.000+0000","clicks":456,"userId":33},
+                {"id":723,"page_views":596,"date":"2019-10-07T00:00:00.000+0000","clicks":412,"userId":33},
+                {"id":1020,"page_views":807,"date":"2019-10-08T00:00:00.000+0000","clicks":467,"userId":33},
+                {"id":1354,"page_views":664,"date":"2019-10-09T00:00:00.000+0000","clicks":852,"userId":33},
+                {"id":1748,"page_views":564,"date":"2019-10-10T00:00:00.000+0000","clicks":396,"userId":33},
+                {"id":2181,"page_views":399,"date":"2019-10-11T00:00:00.000+0000","clicks":663,"userId":33},
+                {"id":2656,"page_views":424,"date":"2019-10-12T00:00:00.000+0000","clicks":871,"userId":33},
+                {"id":3184,"page_views":896,"date":"2019-10-13T00:00:00.000+0000","clicks":614,"userId":33},
+                {"id":3766,"page_views":844,"date":"2019-10-14T00:00:00.000+0000","clicks":230,"userId":33},
+                {"id":4400,"page_views":428,"date":"2019-10-15T00:00:00.000+0000","clicks":235,"userId":33},
+                {"id":5086,"page_views":965,"date":"2019-10-16T00:00:00.000+0000","clicks":915,"userId":33},
+                {"id":5821,"page_views":429,"date":"2019-10-17T00:00:00.000+0000","clicks":619,"userId":33},
+                {"id":6613,"page_views":810,"date":"2019-10-18T00:00:00.000+0000","clicks":672,"userId":33},
+                {"id":7448,"page_views":267,"date":"2019-10-19T00:00:00.000+0000","clicks":557,"userId":33},
+                {"id":8342,"page_views":327,"date":"2019-10-20T00:00:00.000+0000","clicks":771,"userId":33},
+                {"id":9286,"page_views":781,"date":"2019-10-21T00:00:00.000+0000","clicks":864,"userId":33},
+                {"id":10286,"page_views":512,"date":"2019-10-22T00:00:00.000+0000","clicks":535,"userId":33},
+                {"id":11286,"page_views":882,"date":"2019-10-23T00:00:00.000+0000","clicks":488,"userId":33},
+                {"id":12286,"page_views":293,"date":"2019-10-24T00:00:00.000+0000","clicks":299,"userId":33},
+                {"id":13286,"page_views":792,"date":"2019-10-25T00:00:00.000+0000","clicks":329,"userId":33},
+                {"id":14286,"page_views":450,"date":"2019-10-26T00:00:00.000+0000","clicks":459,"userId":33},
+                {"id":15286,"page_views":322,"date":"2019-10-27T00:00:00.000+0000","clicks":254,"userId":33},
+                {"id":16286,"page_views":429,"date":"2019-10-28T00:00:00.000+0000","clicks":407,"userId":33},
+                {"id":17286,"page_views":291,"date":"2019-10-29T00:00:00.000+0000","clicks":849,"userId":33},
+                {"id":18286,"page_views":185,"date":"2019-10-30T00:00:00.000+0000","clicks":257,"userId":33}]
+}

@@ -1,0 +1,41 @@
+
+<div>
+<div class="table"> 
+  <div  class="col s12 table">
+
+    <table datatable [dtOptions]="dtOptions" class="row-border hover"  >
+      <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Total Clicks</th>
+            <th>Total PageView</th>
+            <th>IP Address</th>
+
+        </tr>
+      </thead>
+
+      <tbody *ngIf="user$ | async as user ">
+        <tr *ngFor=" let i of user" (click)="getUser(i.id)">
+          <td>{{i.id}}</td>
+          <td>{{i.firstName}}</td>
+          <td>{{i.lastName}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.gender}}</td>
+          <td>{{i.totalClicks}}</td>
+          <td>{{i.totalPageViews}}</td>
+          <td>{{i.ipAddress}}</td>
+        </tr>
+       
+       
+      </tbody>
+    </table>
+          
+
+  </div>
+
+</div>
+</div>

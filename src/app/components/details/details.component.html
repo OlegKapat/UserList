@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <form [formGroup]="form">
+      <div class="col s6">
+        <input formControlName="date1"   #picker1 >
+        <label>Початок</label>
+       </div>
+       <div class="col s6">
+        <input formControlName="date2"   #picker2 >
+        <label>Кінець</label>
+       </div>
+    </form>
+     
+
+  </div>
+    <div class="row">
+      <div class="col s6">
+        <h5>Total clicks</h5>
+        <canvas #clikcs></canvas>
+      </div>
+      <div class="col s6">
+        <h5>Total views</h5>
+        <canvas #page_views></canvas>
+      </div>
+
+    </div>
+    <button  type="button" class="waves-effect waves-light btn-large" (click)="getDate()">Применить</button>
+</div>

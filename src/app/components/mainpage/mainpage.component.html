@@ -1,0 +1,60 @@
+
+ <div class="container" >
+    <div >
+      <h4>Реєстрація </h4>
+    </div>
+       <form [formGroup]="registrationForm" (ngSubmit)=onSubmitRegister() class="col s12" >
+          <div class="input-field col s12">
+             
+              <input id="personname" type="text" class="validate input-field col s12" formControlName='firstName' [ngClass]="{'invalid':registrationForm.get('firstName').invalid && registrationForm.get('firstName').touched}">
+              <label for="personname">Ім'я</label>
+              <span class="red-text" *ngIf="registrationForm.get('firstName').invalid && registrationForm.get('firstName').touched">
+                  <span *ngIf="registrationForm.get('firstName').errors['required']">Обов'язкове для заповнення</span>
+              </span>
+            </div>
+            <div class="input-field col s12">
+               
+                <input id="name" type="text" class="validate input-field col s12" formControlName='lastName' [ngClass]="{'invalid':registrationForm.get('lastName').invalid && registrationForm.get('lastName').touched}">
+                <label for="name">Прізвище</label>
+                <span class="red-text" *ngIf="registrationForm.get('lastName').invalid && registrationForm.get('lastName').touched">
+                    <span *ngIf="registrationForm.get('lastName').errors['required']">Обов'язкове для заповнення</span>
+                </span>
+              </div>
+          <div class="input-field col s12"> 
+              <input id="email" type="email" class="validate input-field col s12" formControlName='email' [ngClass]="{'invalid':registrationForm.get('email').invalid && registrationForm.get('email').touched}">
+              <label for="email">Email</label>
+              <span class="red-text" *ngIf="registrationForm.get('email').invalid && registrationForm.get('email').touched">
+                  <span *ngIf="registrationForm.get('email').errors['required']">Обов'язкове для заповнення</span>
+                  <span *ngIf="registrationForm.get('email').errors['email']">Невірний формат поля</span>
+              </span>
+            </div>
+            <div class="input-field col s12"> 
+                <input  id="password" type="password" class="validate" formControlName='password' >
+                <label for="password">Пароль</label>
+              </div>
+                            
+                <div class="input-field col s12" [ngClass]="{'invalid':registrationForm.get('gender').invalid && registrationForm.get('gender').touched}"  >
+                  <select formControlName="gender" class="validate" #gender>
+                    <option [ngValue]="''" disabled selected >Стать</option>
+                    <option [ngValue]="'Male'">Male</option>
+                    <option [ngValue]="'Female'">Female</option>
+                  </select>
+                  <span class="red-text" *ngIf="registrationForm.get('gender').invalid && registrationForm.get('gender').touched">
+                    <span *ngIf="registrationForm.get('gender').errors['required']">Обов'язкове для заповнення</span>
+                </span>
+                </div>
+                <div class="input-field col s12"> 
+                  <input id="IpAddress" type="text" class="validate input-field col s12" formControlName='ipAddress' [ngClass]="{'invalid':registrationForm.get('ipAddress').invalid && registrationForm.get('ipAddress').touched}">
+                  <label for="IpAddress">ipAddress</label>
+                  <span class="red-text" *ngIf="registrationForm.get('ipAddress').invalid && registrationForm.get('ipAddress').touched">
+                      <span *ngIf="registrationForm.get('ipAddress').errors['required']">Обов'язкове для заповнення</span>
+                  </span>
+                </div>
+              <div class="btn-group-reg">
+              <button  type="submit" class="waves-effect waves-light btn-large" >Реєстрація</button>
+              <button  type="button" class="modal-close waves-effect waves-blue waves-light btn-large">Відміна</button>
+            </div>
+       </form>
+  
+  </div>
+  
