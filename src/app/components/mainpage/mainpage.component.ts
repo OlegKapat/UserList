@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, OnDestroy } from '@angular/core';
-import { MaterialInstance, MaterialService } from 'src/app/shared/classes/material.service';
+import { MaterialService } from 'src/app/shared/classes/material.service';
 import {FormGroup,FormControl,Validators} from '@angular/forms'
 import { UserService } from 'src/app/shared/services/user.service';
 import { Subscription } from 'rxjs';
@@ -26,7 +26,6 @@ export class MainpageComponent implements OnInit,AfterViewInit,OnDestroy {
       ipAddress:new FormControl('',Validators.required),
       totalClicks:new FormControl((Math.random()*100).toFixed()),
       totalPageViews:new FormControl((Math.random()*100).toFixed())
-    
    })
   }
   ngAfterViewInit(){

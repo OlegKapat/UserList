@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
 import { Content } from 'src/app/shared/interfaces/user';
@@ -12,7 +12,7 @@ import { UserService } from 'src/app/shared/services/user.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit, AfterViewInit {
+export class ListComponent implements OnInit{
  
   user$:Observable<Content>;
   dtOptions: DataTables.Settings = {};
@@ -37,7 +37,5 @@ export class ListComponent implements OnInit, AfterViewInit {
   getUser(id){
     this.router.navigate([`/details/${id}`])
   }
-  ngAfterViewInit(){
-   
-  }
+
 }
