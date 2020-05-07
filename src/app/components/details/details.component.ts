@@ -1,12 +1,13 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit, AfterContentInit, OnDestroy } from '@angular/core';
 import {Chart} from 'chart.js';
-import { MaterialService, MaterialDatepicker } from 'src/app/shared/classes/material.service';
-import { DetailsService } from 'src/app/shared/services/details.service';
-import { Statictic } from 'src/app/shared/interfaces/statictic';
 import * as moment from 'moment';
 import { fromEvent, Subject } from 'rxjs';
 import {  takeUntil } from 'rxjs/operators';
 import { FormControl, FormGroup } from '@angular/forms';
+
+import { MaterialService, MaterialDatepicker } from 'src/app/shared/classes/material.service';
+import { DetailsService } from 'src/app/shared/services/details.service';
+import { Statictic } from 'src/app/shared/interfaces/statictic';
 
 
 @Component({

@@ -1,6 +1,7 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, OnDestroy} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject, Subscription } from 'rxjs';
+
 import { Content } from 'src/app/shared/interfaces/user';
 import { UserService } from 'src/app/shared/services/user.service';
 
@@ -12,9 +13,10 @@ import { UserService } from 'src/app/shared/services/user.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
-export class ListComponent implements OnInit{
+export class ListComponent implements OnInit, OnDestroy{
  
   user$:Observable<Content>;
+  aSub:Subscription
   dtOptions: DataTables.Settings = {};
   page: number;
   range:number;
@@ -23,7 +25,7 @@ export class ListComponent implements OnInit{
               private route:ActivatedRoute) { }
 
   ngOnInit() {
-    this.route.queryParams.subscribe((queryParams:Params)=>{this.page=queryParams['page'], this.range=queryParams['range']})
+    this.route.queryParams.subscribe((queryParams:Params)=>{this.page=queryParams['page'], this.range=queryParams['range']},error=>console.log(error))
     this.user$=this.userService.getUser();
    
     this.dtOptions = {
@@ -37,5 +39,9 @@ export class ListComponent implements OnInit{
   getUser(id){
     this.router.navigate([`/details/${id}`])
   }
-
+   ngOnDestroy(){
+     if(this.aSub){
+       this.aSub.unsubscribe()
+     }
+   }
 }

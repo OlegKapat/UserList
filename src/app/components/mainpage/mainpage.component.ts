@@ -1,8 +1,11 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, OnDestroy } from '@angular/core';
 import { MaterialService } from 'src/app/shared/classes/material.service';
-import {FormGroup,FormControl,Validators} from '@angular/forms'
-import { UserService } from 'src/app/shared/services/user.service';
+import {FormGroup,FormControl,Validators} from '@angular/forms';
 import { Subscription } from 'rxjs';
+
+import { UserService } from 'src/app/shared/services/user.service';
+
+
 
 @Component({
   selector: 'app-mainpage',
@@ -33,7 +36,7 @@ export class MainpageComponent implements OnInit,AfterViewInit,OnDestroy {
     
   }
   onSubmitRegister(){
-    this.aSub=this.service.setUser(this.registrationForm.value).subscribe(data=>console.log(data));
+    this.aSub=this.service.setUser(this.registrationForm.value).subscribe(data=>{console.log(data)},error=>console.log(error));
     this.registrationForm.reset();
       
   }
